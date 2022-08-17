@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Employer {
 
     private int id;
-    private static int nextId = 1;
+    private static int nextId = 1; //Since it is static,its changing value is NOT stored within any Employer object.
     private String value;
 
     public Employer() {
