@@ -17,6 +17,12 @@ public class Main {
 //        for (Job job : jobs){
 //            System.out.println(job);
 //        }
+
+        String word = "beOkay";
+        System.out.println(word.charAt(word.length()-1));
+
     }
+
+
 
 }

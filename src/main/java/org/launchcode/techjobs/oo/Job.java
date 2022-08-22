@@ -47,6 +47,40 @@ public class Job {
         return Objects.hash(getId());
     }
 
+    @Override
+    public String toString(){
+        String errMessage = "Data not available";
+        String n = getName();
+        String e = getEmployer().getValue();
+        String l = getLocation().getValue();
+        String p = getPositionType().getValue();
+        String c = getCoreCompetency().getValue();
+
+        if(n == ""){
+           n = errMessage;
+
+        }else if(e.equals("")){
+            e = errMessage;
+
+        }else if(l.equals("")){
+            l = errMessage;
+
+        }else if(p.equals("")){
+            p = errMessage;
+
+        }else if(c.equals("")){
+             c = errMessage;
+        }
+
+        return"\nID: "+ getId()+"\n"+
+                "Name: "+ n +"\n"+
+                "Employer: "+ e +"\n"+
+                "Location: "+ l +"\n"+
+                "Position Type: "+ p +"\n"+
+                "Core Competency: "+ c +"\n";
+
+    }
+
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
 
