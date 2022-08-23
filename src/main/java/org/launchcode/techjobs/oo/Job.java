@@ -59,16 +59,17 @@ public class Job {
         if(n == ""){
            n = errMessage;
 
-        }else if(e.equals("")){
+        }
+        if(e.equals("")){
             e = errMessage;
 
-        }else if(l.equals("")){
+        } if(l.equals("")){
             l = errMessage;
 
-        }else if(p.equals("")){
+        }if(p.equals("")){
             p = errMessage;
 
-        }else if(c.equals("")){
+        } if(c.equals("")){
              c = errMessage;
         }
 
